@@ -1,19 +1,20 @@
 {
-    "name": "gltf-validator",
-    "description": "Library for validating glTF 2.0 assets, compiled from Dart to JS.",
+    "name": "vrm-validator",
+    "description": "Library for validating VRM assets, compiled from Dart to JS.",
     "license": "Apache-2.0",
-    "bugs": "https://github.com/KhronosGroup/glTF-Validator/issues",
-    "homepage": "https://github.com/KhronosGroup/glTF-Validator",
+    "bugs": "https://github.com/saturday06/VRM-Validator/issues",
+    "homepage": "https://github.com/saturday06/VRM-Validator",
     "repository": {
         "type": "git",
-        "url": "https://github.com/KhronosGroup/glTF-Validator"
+        "url": "https://github.com/saturday06/VRM-Validator"
     },
     "author": {
-        "name": "The Khronos Group Inc."
+        "name": "Isamu Mogi"
     },
     "main": "index.js",
     "module": "module.mjs",
     "keywords": [
+        "vrm",
         "gltf",
         "webgl",
         "3d"

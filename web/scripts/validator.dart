@@ -125,6 +125,10 @@ Future<ValidationResult> _doValidate(List<File> files) async {
       reader = GlbReader(_getFileStream(gltfFile), context);
       break;
     }
+    if (lowerCaseName.endsWith('.vrm')) {
+      reader = GlbReader(_getFileStream(gltfFile), context);
+      break;
+    }
   }
 
   if (reader == null) {

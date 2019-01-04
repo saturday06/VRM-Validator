@@ -143,6 +143,10 @@ class Context {
     for (var i = 0; i < extensionsUsed.length; ++i) {
       final extensionName = extensionsUsed[i];
 
+      if (extensionName == 'VRM') {
+        continue;
+      }
+
       if (!kReservedPrefixes.any(extensionName.startsWith)) {
         addIssue(SemanticError.unreservedExtensionPrefix,
             name: '$EXTENSIONS_USED/$i', args: [extensionName.split('_')[0]]);

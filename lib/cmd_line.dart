@@ -170,11 +170,11 @@ Future<void> run(List<String> args) async {
 
   if (argResult?.rest?.length != 1) {
     errPipe
-      ..write('glTF 2.0 Validator, version $kGltfValidatorVersion\n')
+      ..write('VRM Validator, version $kGltfValidatorVersion\n')
       ..write('Supported extensions:\n\t')
       ..write(Context.defaultExtensionNames.join('\n\t'))
       ..write('\n\n')
-      ..write('Usage: gltf_validator [<options>] <input>\n\n'
+      ..write('Usage: vrm_validator [<options>] <input>\n\n'
           'Validation report will be written to '
           '`<asset_filename>_report.json`.\n'
           'If <input> is a directory, validation reports will be recursively '
@@ -207,7 +207,7 @@ Future<void> run(List<String> args) async {
     final it = Directory(input).listSync(recursive: true).where((entry) {
       if (entry is File) {
         final ext = path.extension(entry.path);
-        return (ext == '.gltf') || (ext == '.glb');
+        return (ext == '.gltf') || (ext == '.glb') || (ext == '.vrm');
       }
       return false;
     }).iterator;

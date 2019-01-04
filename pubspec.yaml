@@ -1,8 +1,8 @@
 name: gltf
 version: 2.0.0-dev.2.7
-description: Library for loading and validating glTF 2.0 assets
-author: The Khronos Group Inc.
-homepage: https://github.com/KhronosGroup/glTF-Validator
+description: Library for loading and validating VRM assets
+author: Isamsu Mogi
+homepage: https://github.com/saturday06/VRM-Validator
 
 dependencies:
   args: '^1.5.0'
@@ -25,4 +25,4 @@ environment:
   sdk: '>=2.1.0 <3.0.0'
 
 executables:
-  gltf_validator:
+  vrm_validator:

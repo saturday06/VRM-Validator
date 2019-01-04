@@ -1,20 +1,16 @@
-<p align="center">
-<img src="https://github.com/KhronosGroup/glTF/raw/master/specification/figures/gltf.png" />
-</p>
+# VRM-Validator
 
-# glTF-Validator
+[![Build Status](https://travis-ci.org/saturday06/VRM-Validator.svg?branch=master)](https://travis-ci.org/saturday06/VRM-Validator)
 
-[![Build Status](https://travis-ci.org/KhronosGroup/glTF-Validator.svg?branch=master)](https://travis-ci.org/KhronosGroup/glTF-Validator)
-
-Tool to validate [glTF](https://github.com/KhronosGroup/glTF) assets.
+Tool to validate [VRM](https://dwango.github.io/en/vrm/) assets.
 
 Validation is performed against [glTF 2.0](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0) specification.
 
 Validator writes a validation report (in JSON-format) with all found issues and asset stats.
 
-Live drag-n-drop tool: http://github.khronos.org/glTF-Validator
+Live drag-n-drop tool: https://saturday06.github.io/VRM-Validator/
 
-NPM package: https://www.npmjs.com/package/gltf-validator
+NPM package: https://www.npmjs.com/package/vrm-validator
 
 ## Implemented features
 

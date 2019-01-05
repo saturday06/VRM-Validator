@@ -16,7 +16,7 @@
   ~ # limitations under the License.
   -->
 
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,11 +32,15 @@
 
 <header>
     <h1>VRM Validator</h1>
+    <p>
+        VRMファイルにエラーが無いかを検証します。<br>
+        VRMファイルとは、<a href="https://vrm-c.github.io/" alt="VRMコンソーシアム">VRMコンソーシアム</a>が推進するVR向け3D人型アバターのためのファイルフォーマットです。
+    </p>
 </header>
 
 <div id="dropZone">
     <input id="input" type="file" style="display: none" multiple>
-    <p><a id="inputLink">Select</a> VRM asset or drop it here.</p>
+    <p><a id="inputLink">VRMファイルを選択する</a>か、<br>この領域にVRMファイルをドロップしてください</p>
     <p id="validityLabel">&nbsp;</p>
 </div>
 <div id="outputZone">

@@ -1,10 +1,56 @@
 <!DOCTYPE html>
+<!--
+  ~ # Copyright (c) 2016 The Khronos Group Inc.
+  ~ # Copyright (c) 2016 Alexey Knyazev
+  ~ #
+  ~ # Licensed under the Apache License, Version 2.0 (the "License");
+  ~ # you may not use this file except in compliance with the License.
+  ~ # You may obtain a copy of the License at
+  ~ #
+  ~ #     http://www.apache.org/licenses/LICENSE-2.0
+  ~ #
+  ~ # Unless required by applicable law or agreed to in writing, software
+  ~ # distributed under the License is distributed on an "AS IS" BASIS,
+  ~ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ # See the License for the specific language governing permissions and
+  ~ # limitations under the License.
+  -->
+
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Validator</title>
-  </head>
-  <body>
-    <h1>Validator</h1>
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRM Validator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="icon" href="logos/glTF_LogoBug_32px_Nov17.png">
+    <script src="scripts/prism.js"></script>
+    <script defer src="scripts/validator.dart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>VRM Validator</h1>
+</header>
+
+<div id="dropZone">
+    <input id="input" type="file" style="display: none" multiple>
+    <p><a id="inputLink">Select</a> VRM asset or drop it here.</p>
+    <p id="validityLabel">&nbsp;</p>
+</div>
+<div id="outputZone">
+    <p><em>Validation is performed locally in your browser. Submitted assets are not uploaded.</em></p>
+    <p id="truncatedWarning" style="display: none"><em>Validation report is truncated because it contains too many
+        issues.</em></p>
+    <pre><code class="language-json" id="output"></code></pre>
+</div>
+
+<a href="https://github.com/saturday06/VRM-Validator">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+         alt="Fork me on GitHub">
+</a>
+
+</body>
 </html>

@@ -5942,7 +5942,7 @@ ev:function(a,b){var z,y,x,w,v,u,t,s,r,q
 C.d.ab(this.z,a)
 for(z=J.j(a),y=this.ch,x=this.dx,w=[P.a],v=0;v<z.gi(a);++v){u=z.h(a,v)
 if(u==="VRM")continue
-if(!C.d.an(C.cj,J.kB(u))&&!0){t=$.$get$iz()
+if(!C.d.an(C.cj,J.kB(u))){t=$.$get$iz()
 s="extensionsUsed/"+v
 this.k(t,H.b([u.split("_")[0]],w),s)}r=x.aL(0,new M.la(u),new M.lb(u))
 if(r==null){t=$.$get$hG()
